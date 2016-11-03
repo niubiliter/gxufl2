@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maintheme" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_below="@+id/password"
+        android:orientation="horizontal" >
+    </LinearLayout>
+           
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/linearLayout2"
+        android:text="@string/usename_"
+        android:textSize="20dp" />
+
+    <EditText
+         android:id="@+id/usename"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/textView1"
+         android:layout_marginLeft="20dp"
+         android:layout_toRightOf="@+id/textView1"
+         android:background="@drawable/shap"
+         android:ems="10"
+         android:singleLine="true"
+         android:hint="@string/sname"
+         android:text="135501209"
+          >
+     </EditText>
+             
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/usename"
+        android:layout_marginTop="39dp"
+        android:layout_toLeftOf="@+id/usename"
+        android:text="@string/password_"
+        android:textSize="20dp" />
+	 <EditText
+         android:id="@+id/password"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/textView2"
+         android:layout_alignLeft="@+id/usename"
+         android:background="@drawable/shap"
+         android:ems="10"
+         android:password="true"
+         android:singleLine="true"
+         android:hint="@string/spass"
+         android:text="linux"
+          />	
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="35dp"
+        android:text="@string/authcode"
+        android:textSize="20dp" />
+     <EditText
+        android:id="@+id/authcode"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:background="@drawable/shap"
+        android:layout_marginTop="45dp"
+        android:singleLine="true"
+         android:hint="@string/scode"
+        >
+    </EditText>
+     <ImageView
+         android:id="@+id/image"
+         android:layout_width="70dp"
+         android:layout_height="40dp"
+         android:layout_alignBottom="@+id/authcode"
+         android:layout_alignRight="@+id/password"
+         android:layout_toRightOf="@+id/authcode"
+         />
+
+     <ImageButton
+         android:id="@+id/login"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/authcode"
+         android:layout_below="@+id/image"
+         android:layout_marginTop="30dp"
+         android:background="@drawable/imagebutton"
+         android:text="登录" />
+     
+</RelativeLayout>
